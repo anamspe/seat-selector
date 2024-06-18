@@ -1,19 +1,93 @@
+.navbar {
+  display: flex;
+  background-color: orange;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+  align-items: center;
+}
+
+.logo {
+  height: 50px;
+  margin: 2px;
+}
+
+.seats-info {
+  display: flex;
+  justify-content: space-around;
+}
+
+.tickets {
+  display: inherit;
+  align-items: center;
+  gap: 30px;
+}
+
+#clear-count-btn {
+  padding: 15px;
+  height: fit-content;
+  color: white;
+  font-weight: bold;
+  font-size: 0.8rem;
+  background-color: #4B36D1;
+  border: none;
+  border-radius: 5px;
+}
+
+.showcase {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
 .container {
-  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  background-color: #4B36D1;
+  height: 80vh;
+  padding: 30px;
+}
+
+.movie-selection {
+  display: flex;
+  flex-direction: column;
+  width: 35vw;
+  gap: 10px;
+  overflow: overlay;
+  background-color: whitesmoke;
+  padding: 15px;
+}
+
+.movie-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  box-shadow: 1px 1px 2px black;
+  padding: 5px;
+}
+
+.movie-selection img {
+  max-height: 200px;
+  max-width: 120px;
+  border: solid 2px rgb(85, 85, 85);
+  border-radius: 5px;
+}
+
+.seat-selection {
   perspective: 1000px;
   margin-bottom: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .screen {
-  background-color: rgb(156, 153, 153);
+  background-color: rgb(212, 212, 212);
   height: 10vh;
   width: 25vw;
   margin: 15px 0;
   transform: rotateX(-48deg);
-  color: white;
+  color: gray;
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
   display: flex;
@@ -40,11 +114,11 @@
 }
 
 .row {
-  display: flex;  
+  display: flex;
 }
 
 .seat {
-  background: navy;
+  background: #BBB2EA;
   height: 25px;
   width: 25px;
   border-radius: 10px 10px 0 0;
@@ -52,28 +126,42 @@
 }
 
 .seat.selected {
-  background-color: magenta;
+  background-color: #29BF68;
 }
 
 .seat.selected:hover:not(.showcase-seat) {
-  background-color: magenta;
-  transform: scale(1.2);
+  background-color: #29BF68;
+  transform: scale(1.1);
   cursor: pointer;
 }
 
 .seat.sold {
-  background-color: green;
+  background-color: #CC2E2F;
 }
 
 .seat.sold:hover:not(.showcase-seat) {
-  background-color: green;
+  background-color: #CC2E2F;
   cursor: not-allowed;
   transform: scale(1);
 }
 
-.seat:hover:not(.showcase-seat):not(.sold):not(.selected) {
-  background: lightblue;
-  transform: scale(1.2);
+.seat.accessible:hover {
+  background: #38AEFE;
+  transform: scale(1.1);
   cursor: pointer;
-  
+}
+
+.seat:hover:not(.showcase-seat):not(.sold):not(.selected):not(.accessible) {
+  background: #BBB2EA;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.accessible {
+  display: flex;
+  background-color: #38AEFE;
+  color: white;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
