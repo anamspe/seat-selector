@@ -1,182 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SugarLand Theatres - Select your seat</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <h3>Seats Selected: <span id="count">0</span></h3>
-  <h3>Ticket Price: $ 13.99</h3>
-  <h3>Total Cost: $<span id="total">0</span></h3>
+  <section class="navbar">
+    <img src="/src/img/popcorn_2102886.png" alt="SugarLand Logo" class="logo">
+    <h2 class="brand">SugarLand Theatres</h2>
+  </section>
 
-  <button id="clear-count-btn">Clear Selections</button>
-
-  <ul class="showcase">
-    <li>
-      <div class="seat showcase-seat"></div>
-      <small>Available</small>
-    </li>
-    <li>
-      <div class="seat selected showcase-seat"></div>
-      <small>Selected</small>
-    </li>
-    <li>
-      <div class="seat sold showcase-seat"></div>
-      <small>Sold</small>
-    </li>
-  </ul>
-
-  <div class="container">
-
-    <div class="screen">SCREEN</div>
-
-    <div class="seats">
-    <div class="left-seats">
-      <div class="row">
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat sold"></div>
-        <div class="seat sold"></div>
-      </div>
-      <div class="row">
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-      </div>
-      <div class="row">
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-      </div>
-      <div class="row">
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-      </div>
-      <div class="row">
-        <div class="seat sold"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-      </div>
-      <div class="row">
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-      </div>
+  <section class="seats-info">
+    <div class="tickets">
+      <h3>Seats Selected: <span id="count">0</span></h3>
+      <h3>Ticket Price: $ 13.99</h3>
+      <h3>Total Cost: $<span id="total">0</span></h3>
+      <button id="clear-count-btn">Clear Selections</button>
     </div>
 
-    <div class="center-seats">
-      <div class="row">
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
+    <div>
+      <ul class="showcase">
+        <li>
+          <div class="seat showcase-seat"></div>
+          <small>Available</small>
+        </li>
+        <li>
+          <div class="seat selected showcase-seat"></div>
+          <small>Selected</small>
+        </li>
+        <li>
+          <div class="seat sold showcase-seat"></div>
+          <small>Sold</small>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="container">
+
+    <div class="movie-selection">
+      <div class="movie-item">
+        <img src="/src/img/DB_059.jpg" alt="" class="movie-one">
+        <h4>Once Upon a Time in Hollywood</h4>
       </div>
-      <div class="row">
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
+      <div class="movie-item">
+        <img src="src/img/DB_004.jpg" alt="" class="movie-two">
+        <h4>Dirty Dancing</h4>
       </div>
-      <div class="row">
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat sold"></div>
-        <div class="seat sold"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
+      <div class="movie-item">
+        <img src="/src/img/DB_032.jpg" alt="" class="movie-three">
+        <h4>Zoolander</h4>
       </div>
-      <div class="row">
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
+      <div class="movie-item">
+        <img src="/src/img/DB_041.jpg" alt="" class="movie-four">
+        <h4>Little Miss Sunshine</h4>
       </div>
-      <div class="row">
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
+      <div class="movie-item">
+        <img src="/src/img/DB_025.jpg" alt="" class="movie-five">
+        <h4>Barbie</h4>
       </div>
-      <div class="row">
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat sold"></div>
-        <div class="seat sold"></div>
+      <div class="movie-item">
+        <img src="/src/img/DB_019.jpg" alt="" class="movie-six">
+        <h4>The Silence of the Lambs</h4>
       </div>
+      </div>
+
+    <div class="seat-selection">
+      <div class="screen">SCREEN</div>
+
+      <div class="seats">
+        <div class="left-seats">
+          <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat sold"></div>
+            <div class="seat sold"></div>
+          </div>
+          <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+          </div>
+          <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+          </div>
+          <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+          </div>
+          <div class="row">
+            <div class="seat sold"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+          </div>
+          <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+          </div>
+        </div>
+
+        <div class="center-seats">
+          <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat accessible"><i class="fa-solid fa-wheelchair"></i></div>
+            <div class="seat accessible"><i class="fa-solid fa-wheelchair"></i></div>
+            <div class="seat accessible"><i class="fa-solid fa-wheelchair"></i></div>
+            <div class="seat accessible"><i class="fa-solid fa-wheelchair"></i></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+          </div>
+          <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+          </div>
+          <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat sold"></div>
+            <div class="seat sold"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+          </div>
+          <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+          </div>
+          <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+          </div>
+          <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat sold"></div>
+            <div class="seat sold"></div>
+          </div>
+        </div>
+
+        <div class="right-seats">
+          <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+          </div>
+          <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+          </div>
+          <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+          </div>
+          <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+          </div>
+          <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+          </div>
+          <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+          </div>
+        </div>
+      </div>
+
     </div>
 
-    <div class="right-seats">
-      <div class="row">
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-      </div>
-      <div class="row">
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-      </div>
-      <div class="row">
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-      </div>
-      <div class="row">
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-      </div>
-      <div class="row">
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-      </div>
-      <div class="row">
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-      </div>
-    </div>
-
-    </div>
-  </div>
+  </section>
 
 </body>
 <script src="main.js"></script>
+<script src="https://kit.fontawesome.com/338d227227.js" crossorigin="anonymous"></script>
+
 </html>
